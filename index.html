@@ -10,19 +10,84 @@
   <link rel="stylesheet" href="css/style.css">
 
   <style type="text/css">
-    #audio-player{
-      display: block;
-      margin: auto;
+    .album-content:hover {
+      cursor:initial;
     }
-    .header {
-      background: rgb(0,0,0,0.4);
-      padding: 40px 0px 40px 0px; 
-      margin: 20px 20px;
-      box-shadow: -15px -19px;
+    .modal {
+      cursor: pointer;
+      display: none;
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      z-index: 2;
+      left: 0;
+      top: 0;
+      overflow: auto;
+      background-color: rgb(0,0,0);
+      background-color: rgb(0,0,0,0.7);
     }
-    .header-ff{
-      text-align: center;
+
+    .modal-content {
+      margin: 2% auto;
+      padding: 20px 3% 40px 3%;
+      width: 98%;
+      background-color: #191E1E;
+      border-radius: 10px;
     }
+
+    .close {
+      color: white;
+      font-weight: 600;
+      font-size: 24px;
+      cursor: pointer;
+      margin-bottom: 10px; 
+    }
+
+    .close:hover, .close:focus {
+      color: grey;
+    }
+
+    .modal-img {
+      width: 100%;
+      border: 1px solid black;
+      margin-bottom: 5%;
+    }
+    table{
+      width: 100%;
+      margin-bottom: 10px;
+    }
+    td, th {
+    border-top: 1px solid grey; 
+    border-bottom: 1px solid grey; 
+    text-align: left;
+    padding: 8px;
+  }
+  th , .genre, .extras{
+    color: grey;
+  }
+  td {
+    color: white;
+  }
+  .extras{
+    font-size: 14px;
+  }
+
+  td:nth-child(2), td:nth-child(3){
+    color: grey;
+  }
+
+  table span {
+    margin-right: 3% !important; 
+  }
+  .modal-content p{
+    margin-bottom: 0px !important;
+  }
+
+  .modal-content p:nth-type(1){
+    color: orange;
+    font-size: 30px;
+  }
+
   </style>
 </head>
 
@@ -36,6 +101,117 @@
     
     <audio id='audio-player'controls src="Childish Gambino - 3005.mp3"></audio>
   </div>
+
+
+   <div class="modal col-md-12" id='modal'>
+        <div class="modal-content col-md-12">
+          <div><span class='close'>X</span></div>
+          <div class="row album-content">
+            <div class="col-md-6" style="margin-bottom: 8px; ">
+            <img class="modal-img"  src="https://ih0.redbubble.net/image.112547980.1623/flat,800x800,075,f.u3.jpg" alt="Gambino" >
+            <p class="extras"><span class="num-songs">19</span> Songs, <span class="num-min">58</span> Minutes</p>
+          </div>
+          <div class="col-md-6 track-list">
+            <h4 style="color: white;">Because the Internet</h4>
+            <h6 class="genre">Hip-Hop/Rap - 2013</h6>
+            <table>
+              <tr>
+                <th>Song</th>
+                <th>Artist</th>
+                <th></th>
+              </tr>
+
+              <tr>
+                <td><span style="margin-right: 16px; color: grey;">1  </span> The Library (Intro)</td>
+                <td> Chilish Gambino</td>
+                <td>0:04</td>
+              </tr>
+              <tr>
+                 <td><span style="margin-right: 12px; color: grey;">2  </span>   I. Crawl</td>
+                 <td> Chilish Gambino</td>
+                <td>3:29</td>
+              </tr>
+
+              <tr>
+                 <td><span style="margin-right: 12px; color: grey;">3  </span>   II. WorldStar</td>
+                 <td> Chilish Gambino</td>
+                <td>4:04</td>
+              </tr>
+
+              <tr>
+                 <td><span style="margin-right: 12px; color: grey;">4  </span>   Dial Up</td>
+                 <td> Chilish Gambino</td>
+                <td>0:44</td>
+              </tr>
+              <tr>
+                 <td><span style="margin-right: 12px; color: grey;">5  </span>    I. The Worst Guys (feat. Chance the Rapper)</td>
+                 <td> Chilish Gambino</td>
+                <td>3:39</td>
+              </tr>
+              <tr>
+                 <td><span style="margin-right: 12px; color: grey;">6  </span>    II. Shadows</td>
+                 <td> Chilish Gambino</td>
+                <td>3:51</td>
+              </tr>
+              <tr>
+                 <td><span style="margin-right: 12px; color: grey;">7  </span>    III. Telegraph Ave. ("Oakland by Lloyd")</td>
+                 <td> Chilish Gambino</td>
+                <td>3:30</td>
+              </tr>
+              <tr>
+                 <td><span style="margin-right: 12px; color: grey;">8  </span>    IV. Sweatpants</td>
+                 <td> Chilish Gambino</td>
+                <td>3:00</td>
+              </tr>
+              <tr>
+                 <td><span style="margin-right: 12px; color: grey;">9  </span>    3005</td>
+                 <td> Chilish Gambino</td>
+                <td>3:54</td>
+              </tr>
+              <tr>
+                 <td><span style="margin-right: 12px; color: grey;">10  </span>   Playing Around Before the Party Starts</td>
+                 <td> Chilish Gambino</td>
+                <td>0:54</td>
+              </tr>
+              <tr>
+                 <td><span style="margin-right: 12px; color: grey;">11  </span>   I. The Party</td>
+                 <td> Chilish Gambino</td>
+                <td>1:31</td>
+              </tr>
+              <tr>
+                 <td><span style="margin-right: 12px; color: grey;">12   </span>   II. No Exit</td>
+                 <td> Chilish Gambino</td>
+                <td>2:51</td>
+              </tr>
+              <tr>
+                 <td><span style="margin-right: 12px; color: grey;">13   </span>   Death By Numbers</td>
+                 <td> Chilish Gambino</td>
+                <td>0:43</td>
+              </tr>
+              <tr>
+                 <td><span style="margin-right: 12px; color: grey;">14   </span>   I. Flight of the Navigator</td>
+                 <td> Chilish Gambino</td>
+                <td>5:44</td>
+              </tr>
+              <tr>
+                 <td><span style="margin-right: 12px; color: grey;">15   </span>   II. Zelots of Stockholm [Free Information]</td>
+                 <td> Chilish Gambino</td>
+                <td>3:29</td>
+              </tr>
+
+            </table>
+            <p class="extras">Released: December 10, 2013</p>
+            <p class="extras">&#8471; 2013 MCDJ Entertainment under exclusive license to GlassNote Entertainment Group LLC, distributed by AWAL</p>
+
+
+          </div>
+          </div>
+          
+          
+        </div>
+      </div>
+
+      <p id="click-here">Click here!</p>
  
 
     <div id="info-text" class="col-sm-12 col-md-12 ">
@@ -63,12 +239,13 @@
       <div id='artist'>
         <h2> Childish Gambino</h2>
         <p>Glover's rapper alias came from a <a href="http://www.mess.be/inickgenwuname.php" target="_blank">Wu Tang Name Generator </a>. He has now released four studio albums which include: Camp (2011), Because of the Internet (2013), Kauai (2014), and Awaken My Love (2016). Becasue of the Internet was nominated for a for Best Rap Album of the Year in 2014 and Best Rap Performance for his first single <a href= "https://www.youtube.com/watch?v=tG35R8F2j8k" target="_blank">"3005".</a> </p>
-
+        <br>
         <div class="row justify-content-md-center">
-          <div class="col-md-4 text-center"> <img src= "img/camp.jpg" class="section-images"> </div>
-          <div class="col-md-4 text-center"> <img src="img/kauai-album.png" class="section-images"></div>
-          <div class="col-md-4 text-center"> <img src="img/awaken-album.jpg" class="section-images"></div>
+          <div class="col-md-4 text-center"> <img src= "img/camp.jpg" class="section-images album"> </div>
+          <div class="col-md-4 text-center"> <img src="img/kauai-album.png" class="section-images album"></div>
+          <div class="col-md-4 text-center"> <img src="img/awaken-album.jpg" class="section-images album"></div>
         </div>
+        <br>
       </div>
 
       <!-- END OF ARTIST SECTION -->
@@ -99,21 +276,46 @@
             <div class=""><img class="section-images" src= "img/lando.jpeg"></div>
           </div>
         </div>
-  </div>
+      </div>
 
     <hr>
       
-      
-        <div id='video' class="col-md-10 embed-responsive embed-responsive-16by9 mx-auto">
+        <div id='video' class="col-md-6 embed-responsive embed-responsive-16by9 mx-auto">
           <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/pMZRRO_Lgpo" allowfullscreen></iframe>
         </div>
 
-        <div class="col-md-12 text-center" id="end-quote"> <h2>"I am what I am, everything I wanna be.” <a href="https://youtu.be/Jdb-6MQaoEY?t=155" target="_blank" > - Childish Gambino </h3></div>
+        <div class="col-md-12 text-center" id="end-quote"> <h2><a href="https://youtu.be/Jdb-6MQaoEY?t=147" target="_blank">"I am what I am, everything I wanna be.”</a> - Childish Gambino</h3></div>
          <!-- <div class="col-md-7" id="video" style="margin-top: 25px"> <iframe display="flex" width="100%" height="100%" src="https://www.youtube.com/embed/pMZRRO_Lgpo" frameborder="1" allowfullscreen></iframe> </div> -->
-
-      
+      </div>
+      <footer>
+        <div class="footer col-md-12" style="width: 100%; background-color: rgb(0,0,0,0.7); height: 100px; text-align: center; color: white; line-height: 100px; position: relative; bottom:0;">
+          <h5 style="height: 100px; line-height: 100px; margin-bottom: 0px;"><a style='color: white; 'href="https://github.com/edwingon1121" target="_blank">Edwin Gonzalez &copy; 2019</a> </h5>
+        </div>
+      </footer>
        
-    
+    <script type="text/javascript">
+      let butt = document.getElementById('click-here');
+      let close = document.getElementsByClassName('close')[0];
+      
+      let m = document.getElementById('modal');
+
+      butt.addEventListener('click', function(){
+       
+        m.style.display = 'block';
+      });
+
+      close.addEventListener('click', function(){
+        m.style.display = 'none';
+      });
+
+      window.addEventListener('click',function(e){
+        console.log(e.target);
+        if(e.target == m){
+          m.style.display = 'none';
+        }
+      });
+
+    </script>
     
     </body>
 </html>

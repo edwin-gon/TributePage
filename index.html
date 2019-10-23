@@ -31,8 +31,10 @@
       margin: 2% auto;
       padding: 20px 3% 40px 3%;
       width: 98%;
+      height: 92%;
       background-color: #191E1E;
       border-radius: 10px;
+      overflow-y: scroll;
     }
 
     .close {
@@ -45,10 +47,11 @@
 
     .close:hover, .close:focus {
       color: grey;
+      cursor: pointer;
     }
 
     .modal-img {
-      width: 100%;
+      width: 95%;
       border: 1px solid black;
       margin-bottom: 5%;
     }
@@ -67,6 +70,7 @@
   }
   td {
     color: white;
+    overflow: hidden;
   }
   .extras{
     font-size: 14px;
@@ -87,6 +91,23 @@
     color: orange;
     font-size: 30px;
   }
+  /*USED FOR STYLING TABLE ENTRIES*/
+  .song-num {
+    margin-right: 16px; 
+    color: grey;
+  }
+  .album:hover{
+    cursor: pointer;
+  }
+
+  .album-title {
+    color: white;
+  }
+
+  .track-list{
+
+  }
+
 
   </style>
 </head>
@@ -95,7 +116,7 @@
   <div class='header'>
      <h1 class="text-center">Donald Glover: The Man of Multiple Talents</h1>
     <div id="contain-img" class="col-md-12"> 
-      <img class="gambino"  src="https://ih0.redbubble.net/image.112547980.1623/flat,800x800,075,f.u3.jpg" alt="Gambino" >
+      <img class="gambino album"  src="img/because_the_internet.jpg" alt="Gambino" data-num='0' >
       <p class="text-center">This is artwork from Donald's Sophmore album <i>Because of the Internet</i>. </p>
     </div>
     
@@ -108,100 +129,21 @@
           <div><span class='close'>X</span></div>
           <div class="row album-content">
             <div class="col-md-6" style="margin-bottom: 8px; ">
-            <img class="modal-img"  src="https://ih0.redbubble.net/image.112547980.1623/flat,800x800,075,f.u3.jpg" alt="Gambino" >
-            <p class="extras"><span class="num-songs">19</span> Songs, <span class="num-min">58</span> Minutes</p>
+            <img class="modal-img"  src="img/because_the_internet.jpg" alt="Gambino" >
+            <p class="extras"><span class="num-songs"></span> Songs, <span class="num-min">58</span> Minutes</p>
           </div>
           <div class="col-md-6 track-list">
-            <h4 style="color: white;">Because the Internet</h4>
-            <h6 class="genre">Hip-Hop/Rap - 2013</h6>
+            <h4 class='album-title'></h4>
+            <h6 class="genre"></h6>
             <table>
               <tr>
                 <th>Song</th>
                 <th>Artist</th>
                 <th></th>
               </tr>
-
-              <tr>
-                <td><span style="margin-right: 16px; color: grey;">1  </span> The Library (Intro)</td>
-                <td> Chilish Gambino</td>
-                <td>0:04</td>
-              </tr>
-              <tr>
-                 <td><span style="margin-right: 12px; color: grey;">2  </span>   I. Crawl</td>
-                 <td> Chilish Gambino</td>
-                <td>3:29</td>
-              </tr>
-
-              <tr>
-                 <td><span style="margin-right: 12px; color: grey;">3  </span>   II. WorldStar</td>
-                 <td> Chilish Gambino</td>
-                <td>4:04</td>
-              </tr>
-
-              <tr>
-                 <td><span style="margin-right: 12px; color: grey;">4  </span>   Dial Up</td>
-                 <td> Chilish Gambino</td>
-                <td>0:44</td>
-              </tr>
-              <tr>
-                 <td><span style="margin-right: 12px; color: grey;">5  </span>    I. The Worst Guys (feat. Chance the Rapper)</td>
-                 <td> Chilish Gambino</td>
-                <td>3:39</td>
-              </tr>
-              <tr>
-                 <td><span style="margin-right: 12px; color: grey;">6  </span>    II. Shadows</td>
-                 <td> Chilish Gambino</td>
-                <td>3:51</td>
-              </tr>
-              <tr>
-                 <td><span style="margin-right: 12px; color: grey;">7  </span>    III. Telegraph Ave. ("Oakland by Lloyd")</td>
-                 <td> Chilish Gambino</td>
-                <td>3:30</td>
-              </tr>
-              <tr>
-                 <td><span style="margin-right: 12px; color: grey;">8  </span>    IV. Sweatpants</td>
-                 <td> Chilish Gambino</td>
-                <td>3:00</td>
-              </tr>
-              <tr>
-                 <td><span style="margin-right: 12px; color: grey;">9  </span>    3005</td>
-                 <td> Chilish Gambino</td>
-                <td>3:54</td>
-              </tr>
-              <tr>
-                 <td><span style="margin-right: 12px; color: grey;">10  </span>   Playing Around Before the Party Starts</td>
-                 <td> Chilish Gambino</td>
-                <td>0:54</td>
-              </tr>
-              <tr>
-                 <td><span style="margin-right: 12px; color: grey;">11  </span>   I. The Party</td>
-                 <td> Chilish Gambino</td>
-                <td>1:31</td>
-              </tr>
-              <tr>
-                 <td><span style="margin-right: 12px; color: grey;">12   </span>   II. No Exit</td>
-                 <td> Chilish Gambino</td>
-                <td>2:51</td>
-              </tr>
-              <tr>
-                 <td><span style="margin-right: 12px; color: grey;">13   </span>   Death By Numbers</td>
-                 <td> Chilish Gambino</td>
-                <td>0:43</td>
-              </tr>
-              <tr>
-                 <td><span style="margin-right: 12px; color: grey;">14   </span>   I. Flight of the Navigator</td>
-                 <td> Chilish Gambino</td>
-                <td>5:44</td>
-              </tr>
-              <tr>
-                 <td><span style="margin-right: 12px; color: grey;">15   </span>   II. Zelots of Stockholm [Free Information]</td>
-                 <td> Chilish Gambino</td>
-                <td>3:29</td>
-              </tr>
-
             </table>
-            <p class="extras">Released: December 10, 2013</p>
-            <p class="extras">&#8471; 2013 MCDJ Entertainment under exclusive license to GlassNote Entertainment Group LLC, distributed by AWAL</p>
+            <p class="extras date-release"></p>
+            <p class="extras copyright"></p>
 
 
           </div>
@@ -211,7 +153,7 @@
         </div>
       </div>
 
-      <p id="click-here">Click here!</p>
+    <!--   <p id="click-here">Click here!</p> -->
  
 
     <div id="info-text" class="col-sm-12 col-md-12 ">
@@ -241,9 +183,9 @@
         <p>Glover's rapper alias came from a <a href="http://www.mess.be/inickgenwuname.php" target="_blank">Wu Tang Name Generator </a>. He has now released four studio albums which include: Camp (2011), Because of the Internet (2013), Kauai (2014), and Awaken My Love (2016). Becasue of the Internet was nominated for a for Best Rap Album of the Year in 2014 and Best Rap Performance for his first single <a href= "https://www.youtube.com/watch?v=tG35R8F2j8k" target="_blank">"3005".</a> </p>
         <br>
         <div class="row justify-content-md-center">
-          <div class="col-md-4 text-center"> <img src= "img/camp.jpg" class="section-images album"> </div>
-          <div class="col-md-4 text-center"> <img src="img/kauai-album.png" class="section-images album"></div>
-          <div class="col-md-4 text-center"> <img src="img/awaken-album.jpg" class="section-images album"></div>
+          <div class="col-md-4 text-center"> <img src= "img/camp.jpg" class="section-images album" data-num='1'> </div>
+          <div class="col-md-4 text-center"> <img src="img/kauai-album.png" class="section-images album" data-num='2'></div>
+          <div class="col-md-4 text-center"> <img src="img/awaken-album.jpg" class="section-images album" data-num='3'></div>
         </div>
         <br>
       </div>
@@ -292,17 +234,86 @@
           <h5 style="height: 100px; line-height: 100px; margin-bottom: 0px;"><a style='color: white; 'href="https://github.com/edwingon1121" target="_blank">Edwin Gonzalez &copy; 2019</a> </h5>
         </div>
       </footer>
-       
+    <script type="text/javascript" src="js/albums.js"></script>
     <script type="text/javascript">
-      let butt = document.getElementById('click-here');
+    
+      let albs = document.querySelectorAll('.album');
+      console.log(albs);
       let close = document.getElementsByClassName('close')[0];
       
       let m = document.getElementById('modal');
 
-      butt.addEventListener('click', function(){
-       
-        m.style.display = 'block';
+      albs.forEach(function(e){
+        e.addEventListener('click', function(){
+          m.style.display = 'block';
+          let num = e.getAttribute('data-num');
+
+
+          //Clear the node (modal)
+          let img = document.getElementsByClassName('modal-img')[0];
+          img.src = this.src;
+
+          let aTitle = document.getElementsByClassName('album-title')[0];
+          aTitle.innerHTML = albums[num].title; 
+
+          let genreYr = document.getElementsByClassName('genre')[0];
+          genreYr.innerHTML = albums[num].genre + ' - ' + albums[num].yearReleased;
+
+          let numSongs = document.getElementsByClassName('num-songs')[0];
+          numSongs.innerHTML = albums[num].numSongs;
+
+          let numMin = document.getElementsByClassName('num-min')[0];
+          numMin.innerHTML = albums[num].totalTime;
+
+          let released = document.getElementsByClassName('date-release')[0];
+          released.innerHTML = albums[num].released;
+          let copyRight = document.getElementsByClassName('copyright')[0];
+          copyRight.innerHTML = albums[num].copyright;
+
+          console.log(this.src);
+
+          let tableBody = document.getElementsByTagName('tbody')[0];
+          let nBody = document.createElement('tbody');
+          tableBody.parentNode.replaceChild(populateSongList(num,nBody), tableBody);
+
+        })
       });
+
+      function populateSongList(index,body){
+        let headerRow = document.createElement('tr');
+        headerRow.innerHTML = '<tr><th>Song</th><th>Artist</th><th></th></tr>';
+
+        body.appendChild(headerRow);
+
+        let count = 1;
+        for (let s in albums[index].tracks){
+         
+          let containSong = document.createElement('tr');
+          let containTitle = document.createElement('td');
+          containTitle.innerHTML ="<span class='song-num'>" + count + "  </span>";
+        
+
+          containTitle.innerHTML += albums[index].tracks[s];
+          
+          let artistName = document.createElement('td');
+          let songLength = document.createElement('td');
+
+          artistName.innerHTML = 'Chilish Gambino';
+          songLength.innerHTML = '0:00';
+
+          containSong.appendChild(containTitle);
+          containSong.appendChild(artistName);
+          containSong.appendChild(songLength);
+
+          body.appendChild(containSong);
+
+          count++;
+
+        }
+
+        return body
+
+      }
 
       close.addEventListener('click', function(){
         m.style.display = 'none';

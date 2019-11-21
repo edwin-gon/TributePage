@@ -38,3 +38,92 @@ var albums =
     "copyright": "\u2117 2016 McDJ Entertainment under exclusive license to Glassnote Entertainment Group LLC, distributed by AWAL", "genre": "R&B/Soul"}
     
 ];
+
+let albs = document.querySelectorAll('.album');
+      console.log(albs);
+      let close = document.getElementsByClassName('close')[0];
+      
+      let m = document.getElementById('modal');
+
+      albs.forEach(function(e){
+        e.addEventListener('click', function(){
+          m.style.display = 'block';
+          let num = e.getAttribute('data-num');
+
+
+          //Clear the node (modal)
+          let img = document.getElementsByClassName('modal-img')[0];
+          img.src = this.src;
+
+          let aTitle = document.getElementsByClassName('album-title')[0];
+          aTitle.innerHTML = albums[num].title; 
+
+          let genreYr = document.getElementsByClassName('genre')[0];
+          genreYr.innerHTML = albums[num].genre + ' - ' + albums[num].yearReleased;
+
+          let numSongs = document.getElementsByClassName('num-songs')[0];
+          numSongs.innerHTML = albums[num].numSongs;
+
+          let numMin = document.getElementsByClassName('num-min')[0];
+          numMin.innerHTML = albums[num].totalTime;
+
+          let released = document.getElementsByClassName('date-release')[0];
+          released.innerHTML = albums[num].released;
+          let copyRight = document.getElementsByClassName('copyright')[0];
+          copyRight.innerHTML = albums[num].copyright;
+
+          console.log(this.src);
+
+          let tableBody = document.getElementsByTagName('tbody')[0];
+          let nBody = document.createElement('tbody');
+          tableBody.parentNode.replaceChild(populateSongList(num,nBody), tableBody);
+
+        })
+      });
+
+      function populateSongList(index,body){
+        let headerRow = document.createElement('tr');
+        headerRow.innerHTML = '<tr><th>Song</th><th>Artist</th><th></th></tr>';
+
+        body.appendChild(headerRow);
+
+        let count = 1;
+        for (let s in albums[index].tracks){
+         
+          let containSong = document.createElement('tr');
+          let containTitle = document.createElement('td');
+          containTitle.innerHTML ="<span class='song-num'>" + count + "  </span>";
+        
+
+          containTitle.innerHTML += albums[index].tracks[s];
+          
+          let artistName = document.createElement('td');
+          let songLength = document.createElement('td');
+
+          artistName.innerHTML = 'Chilish Gambino';
+          songLength.innerHTML = '0:00';
+
+          containSong.appendChild(containTitle);
+          containSong.appendChild(artistName);
+          containSong.appendChild(songLength);
+
+          body.appendChild(containSong);
+
+          count++;
+
+        }
+
+        return body
+
+      }
+
+      close.addEventListener('click', function(){
+        m.style.display = 'none';
+      });
+
+      window.addEventListener('click',function(e){
+        console.log(e.target);
+        if(e.target == m){
+          m.style.display = 'none';
+        }
+      });

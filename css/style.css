@@ -14,6 +14,10 @@ p {
   font-family: 'Raleway', sans-serif;
 }
 
+.header img {
+  width: 75%;
+}
+
 body {
 background: #8e9eab; /* fallback for old browsers */
 background: -webkit-linear-gradient(to left, #8e9eab , #eef2f3); /* Chrome 10-25, Safari 5.1-6 */
@@ -30,8 +34,8 @@ padding: 0px;
 }
 
 .section-images {
-  width: 350px;
-  height: 330px;
+  width: 100%;
+  height: 375px;
   margin-bottom: 15px;
   border-color: black;
   border-style: solid;
@@ -46,6 +50,7 @@ padding: 0px;
 #audio-player {
   display: block;
   margin: auto;
+  width: 90%;
 }
 
 .header {
@@ -54,8 +59,9 @@ padding: 0px;
   border-radius: 35px;
   margin: 60px 45px 60px 45px;
   /*margin: 60px 20px 0px 20px;*/
-  box-shadow: -18px -14px 12px -4px;
+  box-shadow: -14px -5px 22px -2px;
 }
+
 
 .header-ff{
   text-align: center;
@@ -71,5 +77,117 @@ padding: 0px;
   padding-top: 2%;
   padding-bottom: 2%;
   display: inline-block;
+}
+
+ .album-content:hover {
+      cursor:initial;
+    }
+    .modal {
+      cursor: pointer;
+      display: none;
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      z-index: 2;
+      left: 0;
+      top: 0;
+      overflow: auto;
+      background-color: rgb(0,0,0);
+      background-color: rgb(0,0,0,0.7);
+    }
+
+    .modal-content {
+      margin: 2% auto;
+      padding: 20px 3% 40px 3%;
+      width: 98%;
+      height: 92%;
+      background-color: #191E1E;
+      border-radius: 10px;
+      overflow-y: scroll;
+    }
+
+    .close {
+      color: white;
+      font-weight: 600;
+      font-size: 24px;
+      cursor: pointer;
+      margin-bottom: 10px; 
+    }
+
+    .close:hover, .close:focus {
+      color: grey;
+      cursor: pointer;
+    }
+
+    .modal-img {
+      width: 95%;
+      border: 1px solid black;
+      margin-bottom: 5%;
+    }
+    table{
+      width: 100%;
+      margin-bottom: 10px;
+    }
+    td, th {
+    border-top: 1px solid grey; 
+    border-bottom: 1px solid grey; 
+    text-align: left;
+    padding: 8px;
+  }
+  th , .genre, .extras{
+    color: grey;
+  }
+  td {
+    color: white;
+    overflow: hidden;
+  }
+  .extras{
+    font-size: 14px;
+  }
+
+  td:nth-child(2), td:nth-child(3){
+    color: grey;
+  }
+
+  table span {
+    margin-right: 3% !important; 
+  }
+  .modal-content p{
+    margin-bottom: 0px !important;
+  }
+
+  .modal-content p:nth-type(1){
+    color: orange;
+    font-size: 30px;
+  }
+  /*USED FOR STYLING TABLE ENTRIES*/
+  .song-num {
+    margin-right: 16px; 
+    color: grey;
+  }
+  .album:hover{
+    cursor: pointer;
+  }
+
+  .album-title {
+    color: white;
+  }
+@media(max-width: 768px){
+  .section-images{
+    height: 30vh;
+  }
+}
+
+@media (max-width: 767px){
+  .section-images{
+    height: 300px;
+  }
+  .header img {
+    width: 100%;
+  }
+
+  .header {
+    margin: 60px 10px 60px 10px;
+  }
 }
 

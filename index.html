@@ -8,111 +8,11 @@
   <link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Anton'>
   <link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Raleway'>
   <link rel="stylesheet" href="css/style.css">
-
-  <style type="text/css">
-    .album-content:hover {
-      cursor:initial;
-    }
-    .modal {
-      cursor: pointer;
-      display: none;
-      position: fixed;
-      width: 100%;
-      height: 100%;
-      z-index: 2;
-      left: 0;
-      top: 0;
-      overflow: auto;
-      background-color: rgb(0,0,0);
-      background-color: rgb(0,0,0,0.7);
-    }
-
-    .modal-content {
-      margin: 2% auto;
-      padding: 20px 3% 40px 3%;
-      width: 98%;
-      height: 92%;
-      background-color: #191E1E;
-      border-radius: 10px;
-      overflow-y: scroll;
-    }
-
-    .close {
-      color: white;
-      font-weight: 600;
-      font-size: 24px;
-      cursor: pointer;
-      margin-bottom: 10px; 
-    }
-
-    .close:hover, .close:focus {
-      color: grey;
-      cursor: pointer;
-    }
-
-    .modal-img {
-      width: 95%;
-      border: 1px solid black;
-      margin-bottom: 5%;
-    }
-    table{
-      width: 100%;
-      margin-bottom: 10px;
-    }
-    td, th {
-    border-top: 1px solid grey; 
-    border-bottom: 1px solid grey; 
-    text-align: left;
-    padding: 8px;
-  }
-  th , .genre, .extras{
-    color: grey;
-  }
-  td {
-    color: white;
-    overflow: hidden;
-  }
-  .extras{
-    font-size: 14px;
-  }
-
-  td:nth-child(2), td:nth-child(3){
-    color: grey;
-  }
-
-  table span {
-    margin-right: 3% !important; 
-  }
-  .modal-content p{
-    margin-bottom: 0px !important;
-  }
-
-  .modal-content p:nth-type(1){
-    color: orange;
-    font-size: 30px;
-  }
-  /*USED FOR STYLING TABLE ENTRIES*/
-  .song-num {
-    margin-right: 16px; 
-    color: grey;
-  }
-  .album:hover{
-    cursor: pointer;
-  }
-
-  .album-title {
-    color: white;
-  }
-
-  .track-list{
-
-  }
-
-
-  </style>
 </head>
 
 <body>
+  <div class="container-fluid">
+    
   <div class='header'>
      <h1 class="text-center">Donald Glover: The Man of Multiple Talents</h1>
     <div id="contain-img" class="col-md-12"> 
@@ -183,9 +83,9 @@
         <p>Glover's rapper alias came from a <a href="http://www.mess.be/inickgenwuname.php" target="_blank">Wu Tang Name Generator </a>. He has now released four studio albums which include: Camp (2011), Because of the Internet (2013), Kauai (2014), and Awaken My Love (2016). Becasue of the Internet was nominated for a for Best Rap Album of the Year in 2014 and Best Rap Performance for his first single <a href= "https://www.youtube.com/watch?v=tG35R8F2j8k" target="_blank">"3005".</a> </p>
         <br>
         <div class="row justify-content-md-center">
-          <div class="col-md-4 text-center"> <img src= "img/camp.jpg" class="section-images album" data-num='1'> </div>
-          <div class="col-md-4 text-center"> <img src="img/kauai-album.png" class="section-images album" data-num='2'></div>
-          <div class="col-md-4 text-center"> <img src="img/awaken-album.jpg" class="section-images album" data-num='3'></div>
+          <div class="col-md-4 col-sm-4 text-center"> <img src= "img/camp.jpg" class="section-images album" data-num='1'> </div>
+          <div class="col-md-4 col-sm-4 text-center"> <img src="img/kauai-album.png" class="section-images album" data-num='2'></div>
+          <div class="col-md-4 col-sm-4 text-center"> <img src="img/awaken-album.jpg" class="section-images album" data-num='3'></div>
         </div>
         <br>
       </div>
@@ -200,23 +100,25 @@
         <h2> Fun Facts</h2> 
 
         <div class="row justify-content-md-center">
-          <div class="col-sm-6  col-md-6  col-lg-4 text-center" style="padding-top: 15px"> 
+          <div class="col-sm-6  col-md-6  col-lg-4 text-center" style="margin-bottom: 15px"> 
             <h4 class="header-ff">#DonaldForSpiderMan</h4>
             <p>This was all started from a fan, who stated he should play SpiderMan and little did he know that a trend had emerged. He later talked about this funny theory in his Comedy Central special <a href="https://www.youtube.com/watch?v=ULdm2NLrN4E" target="_blank">Weirdo</a> (2011).</p>
             <div class=""><img class="section-images" src="img/spiderman.jpg"></div>
           </div>
 
+           <div class=" col-sm-6 col-md-6  col-lg-4 text-center" style="margin-bottom: 15px">
+            <h4 class="header-ff"> Star Wars has a new Star</h4>
+            <p>Glover played Lando Calrissian be in the Star Wars: Solo movie which aired in 2018. Glover was the perfect actor because he has the look down, began as a comedic actor, a creative, and a nerd at heart. </p>
+            <div class=""><img class="section-images" src= "img/lando.jpeg"></div>
+          </div>
+
           <div class="col-sm-6 col-md-6 col-lg-4 text-center" style="margin-bottom: 15px">
             <h4 class="header-ff"> "Migos are The Beatles of Our Generation"</h4>
-            <p>Glover stated in his award acceptance speech for his tv series <i>Atlanta</i> that the rap group Migos are The Beatles of our Generation. He also recognized them for creating a No. 1 chart song, <a href="https://www.youtube.com/watch?v=S-sJp1FfG7Q" target="_blank">"Bad & Boujee"</a> and for being on the show. </p>
+            <p>Glover stated in his Golden Globe award acceptance speech for his tv series <i>Atlanta</i> that the rap group Migos are The Beatles of our generation with their No. 1 chart song, <a href="https://www.youtube.com/watch?v=S-sJp1FfG7Q" target="_blank">"Bad & Boujee"</a>. </p>
             <div class=""><img class="section-images" src= "img/migos.jpg"></div>
           </div>
 
-          <div class=" col-sm-6 col-md-6  col-lg-4 text-center" style="margin-bottom: 15px">
-            <h4 class="header-ff"> Star Wars has a new Star</h4>
-            <p>Glover stated that he will playing Lando Calrissian be in the upcoming Han Solo movie that is to air in 2018. Glover is said to be the perfect actor because he has the look down, began as a comedic actor, a creative, and a nerd at heart. </p>
-            <div class=""><img class="section-images" src= "img/lando.jpeg"></div>
-          </div>
+         
         </div>
       </div>
 
@@ -226,107 +128,16 @@
           <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/pMZRRO_Lgpo" allowfullscreen></iframe>
         </div>
 
-        <div class="col-md-12 text-center" id="end-quote"> <h2><a href="https://youtu.be/Jdb-6MQaoEY?t=147" target="_blank">"I am what I am, everything I wanna be.”</a> - Childish Gambino</h3></div>
+        <div class="col-md-12 text-center" id="end-quote"> <h2><a href="https://youtu.be/Jdb-6MQaoEY?t=147" target="_blank">"I am what I am, everything I wanna be.”</a><span style="display: block; margin-top: 2%; ">- Childish Gambino</span></h3></div>
          <!-- <div class="col-md-7" id="video" style="margin-top: 25px"> <iframe display="flex" width="100%" height="100%" src="https://www.youtube.com/embed/pMZRRO_Lgpo" frameborder="1" allowfullscreen></iframe> </div> -->
       </div>
-      <footer>
+    </div>
+     <footer>
         <div class="footer col-md-12" style="width: 100%; background-color: rgb(0,0,0,0.7); height: 100px; text-align: center; color: white; line-height: 100px; position: relative; bottom:0;">
           <h5 style="height: 100px; line-height: 100px; margin-bottom: 0px;"><a style='color: white; 'href="https://github.com/edwingon1121" target="_blank">Edwin Gonzalez &copy; 2019</a> </h5>
         </div>
       </footer>
     <script type="text/javascript" src="js/albums.js"></script>
-    <script type="text/javascript">
-    
-      let albs = document.querySelectorAll('.album');
-      console.log(albs);
-      let close = document.getElementsByClassName('close')[0];
-      
-      let m = document.getElementById('modal');
-
-      albs.forEach(function(e){
-        e.addEventListener('click', function(){
-          m.style.display = 'block';
-          let num = e.getAttribute('data-num');
-
-
-          //Clear the node (modal)
-          let img = document.getElementsByClassName('modal-img')[0];
-          img.src = this.src;
-
-          let aTitle = document.getElementsByClassName('album-title')[0];
-          aTitle.innerHTML = albums[num].title; 
-
-          let genreYr = document.getElementsByClassName('genre')[0];
-          genreYr.innerHTML = albums[num].genre + ' - ' + albums[num].yearReleased;
-
-          let numSongs = document.getElementsByClassName('num-songs')[0];
-          numSongs.innerHTML = albums[num].numSongs;
-
-          let numMin = document.getElementsByClassName('num-min')[0];
-          numMin.innerHTML = albums[num].totalTime;
-
-          let released = document.getElementsByClassName('date-release')[0];
-          released.innerHTML = albums[num].released;
-          let copyRight = document.getElementsByClassName('copyright')[0];
-          copyRight.innerHTML = albums[num].copyright;
-
-          console.log(this.src);
-
-          let tableBody = document.getElementsByTagName('tbody')[0];
-          let nBody = document.createElement('tbody');
-          tableBody.parentNode.replaceChild(populateSongList(num,nBody), tableBody);
-
-        })
-      });
-
-      function populateSongList(index,body){
-        let headerRow = document.createElement('tr');
-        headerRow.innerHTML = '<tr><th>Song</th><th>Artist</th><th></th></tr>';
-
-        body.appendChild(headerRow);
-
-        let count = 1;
-        for (let s in albums[index].tracks){
-         
-          let containSong = document.createElement('tr');
-          let containTitle = document.createElement('td');
-          containTitle.innerHTML ="<span class='song-num'>" + count + "  </span>";
-        
-
-          containTitle.innerHTML += albums[index].tracks[s];
-          
-          let artistName = document.createElement('td');
-          let songLength = document.createElement('td');
-
-          artistName.innerHTML = 'Chilish Gambino';
-          songLength.innerHTML = '0:00';
-
-          containSong.appendChild(containTitle);
-          containSong.appendChild(artistName);
-          containSong.appendChild(songLength);
-
-          body.appendChild(containSong);
-
-          count++;
-
-        }
-
-        return body
-
-      }
-
-      close.addEventListener('click', function(){
-        m.style.display = 'none';
-      });
-
-      window.addEventListener('click',function(e){
-        console.log(e.target);
-        if(e.target == m){
-          m.style.display = 'none';
-        }
-      });
-
-    </script>
     
     </body>
 </html>

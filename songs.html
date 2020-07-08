@@ -5,28 +5,62 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>D.Glover</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
   <link rel='stylesheet prefetch' href='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css'>
+  <link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Anton'>
+  <link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Raleway'>
   <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
   <div class="container-fluid">
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
       <a class="navbar-brand" href="/index.html">
-        <h1>D. Glover</h1>
+        <h1 id="title-site">D. Glover</h1>
       </a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
-        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse d-flex  flex-row justify-content-end" id="navbarNavAltMarkup">
-        <div class="navbar-nav">
-          <a class="nav-item nav-link" href="#">Biography</a>
-          <a class="nav-item nav-link" href="/tv.html">Television</a>
-          <a class="nav-item nav-link active disable" href="#">Music <span class="sr-only">(current)</span></a>
-        </div>
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav justify-content-end">
+          <li class="nav-item"><a class="nav-link" href="#">Biography</a></li>
+          <li class="nav-item"><a class="nav-link" href="/tv.html">Entertainment</a></li>
+          <li class="nav-item"><a class="nav-link active disabled" href="/songs.html">Music <span
+                class="sr-only">(current)</span></a></li>
+        </ul>
       </div>
     </nav>
+    <div class="modal col-md-12" id='modal'>
+      <div class="modal-content col-md-12">
+        <div><span class='close'>X</span></div>
+        <div class="row album-content">
+          <div class="col-md-6" style="margin-bottom: 8px; ">
+            <img class="modal-img" src="img/because_the_internet.jpg" alt="Gambino">
+            <p class="extras"><span class="num-songs"></span> Songs, <span class="num-min">58</span> Minutes</p>
+          </div>
+          <div class="col-md-6 track-list">
+            <h4 class='album-title'></h4>
+            <h6 class="genre"></h6>
+            <table>
+              <tr>
+                <th>Song</th>
+                <th>Artist</th>
+                <th></th>
+              </tr>
+            </table>
+            <p class="extras date-release"></p>
+            <p class="extras copyright"></p>
+
+
+          </div>
+        </div>
+
+
+      </div>
+    </div>
 
     <div id="info-text" class="col-sm-12 col-md-12 ">
       <div id='artist'>
@@ -49,7 +83,7 @@
       </div>
     </div>
   </div>
-
+  <script type="text/javascript" src="js/albums.js"></script>
 </body>
 
 </html>

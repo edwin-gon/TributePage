@@ -1,10 +1,14 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-  <meta name="viewport" content= "width=device-width, initial-scale=1.0"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tribute to Donald Glover</title>
-  
-  <link rel='stylesheet prefetch' href='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css'>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
   <link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Anton'>
   <link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Raleway'>
   <link rel="stylesheet" href="css/style.css">
@@ -12,24 +16,44 @@
 
 <body>
   <div class="container-fluid">
-    
-  <div class='header'>
-     <h1 class="text-center">Donald Glover: The Man of Multiple Talents</h1>
-    <div id="contain-img" class="col-md-12"> 
-      <img class="gambino album"  src="img/because_the_internet.jpg" alt="Gambino" data-num='0' >
-      <p class="text-center">This is artwork from Donald's Sophmore album <i>Because of the Internet</i>. </p>
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+      <a class="navbar-brand" href="/index.html">
+        <h1 id="title-site">D. Glover</h1>
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav justify-content-end">
+          <li class="nav-item"><a class="nav-link" href="#">Biography</a></li>
+          <li class="nav-item"><a class="nav-link" href="/tv.html">Entertainment</a></li>
+          <li class="nav-item"><a class="nav-link" href="/songs.html">Music</a></li>
+
+
+
+        </ul>
+      </div>
+    </nav>
+
+    <div class='header col-md-12 col-xs-12'>
+      <div class="row">
+        <img class="gambino fade-in col-md-8 col-xs-12" src="img/glover-cover.jpg" alt="Gambino" data-num='0'>
+        <div class="col-md-4 col-xs-12 text-center" id="end-quote">
+          <h1 class="fade-in"><a href="https://youtu.be/Jdb-6MQaoEY?t=147" target="_blank">"I am what I am, everything I
+              wanna
+              be.”</a><span style="display: block; margin-top: 2%; ">- Childish Gambino</span></h1>
+        </div>
+      </div>
+      <!-- <audio id='audio-player' controls src="Childish Gambino - 3005.mp3"></audio> -->
     </div>
-    
-    <audio id='audio-player'controls src="Childish Gambino - 3005.mp3"></audio>
-  </div>
 
 
-   <div class="modal col-md-12" id='modal'>
-        <div class="modal-content col-md-12">
-          <div><span class='close'>X</span></div>
-          <div class="row album-content">
-            <div class="col-md-6" style="margin-bottom: 8px; ">
-            <img class="modal-img"  src="img/because_the_internet.jpg" alt="Gambino" >
+    <div class="modal col-md-12" id='modal'>
+      <div class="modal-content col-md-12">
+        <div><span class='close'>X</span></div>
+        <div class="row album-content">
+          <div class="col-md-6" style="margin-bottom: 8px; ">
+            <!-- <img class="modal-img" src="img/because_the_internet.jpg" alt="Gambino"> -->
             <p class="extras"><span class="num-songs"></span> Songs, <span class="num-min">58</span> Minutes</p>
           </div>
           <div class="col-md-6 track-list">
@@ -47,101 +71,222 @@
 
 
           </div>
-          </div>
-          
-          
         </div>
+
+
       </div>
+    </div>
 
     <!--   <p id="click-here">Click here!</p> -->
- 
 
-    <div id="info-text" class="col-sm-12 col-md-12 ">
-      <h2>Humble Beginnings</h2>
-      <p> Donald was born at Edwards Air Force Base, California and raised in Stone Mountain, Geogria. His mother, Beverly, was a daycare provider while his dad was a postal worker. He attended Dekalb School of Arts which is located in East Atlanta. At Dekalb, he was voted "Most Likely to Write for The Simpsons". He later attended New York University with a degree in Dramatic Writing in 2006.</p>
-      
-      <p>Back in '06, Glover sent David Miner, an excutive prodcer for famous shows like <a href="https://www.youtube.com/watch?v=-dVAZy-jEKg" target="_blank"><i>30 Rock</i> </a>, a speculative screenplay that he wrote for <a href="https://www.youtube.com/watch?v=cnaeIAEp2pU" target="_blank"><i>The Simpsons</i></a>. Miner and Tina Fey were impressed with his work and later became a writer for the NBC series <i>30 Rock.</i></p>
-      
-      <hr>
-      
+
+    <div id="info-text" class="col-sm-12 col-md-12 col-xs-12">
+      <br />
+      <h1>Website Inspiration:</h1>
+      <br />
+      <h5>Creating this site was a way to highlight the achievements of Donald Glover and what different avenues he has
+        followed to get to where he is now. He was able to jump between acting and writing in the television space, to
+        doing stand up comedy, and pursuing a music career. He found things he was interested in and took the jump. That
+        same drive inspired me to take the jump and create a site to collect information and display his work. </h5>
+
+
       <!-- ACCOLADES SECTION -->
 
-      <div id="accolades">
-        <h2> Actor Accolades</h2>
-        <p> Donald started his launch to success with becoming a writer on 30 Rock. From his work on 30 Rock, he later was nominated for an award by the Writers Guild of America. His talents as an actor also began in the television series, <a href="https://www.youtube.com/watch?v=4fwcj8NhL1I" target="_blank"><i>Community </i></a> (2009), which he plays an athlete in a study group. In 2015, he also made an apperance in the film <a href="" target="_blank"><i>Martian</i>.</a></p>
-        
-        <p>After leaving Community, Glover has still continued his actoring and writing abilites in most recent works for Fx show <a href="https://www.youtube.com/watch?v=_D4yk0vd788" ><i>Atlanta</i></a>. As for future projects, he has signs a deal with Fx Productions for a future show and he is to play Lando in the upcoming Star Wars, which is to release in late 2017.</p>
-      </div>
-      <hr>
 
       <!-- END OF ACCOLADES -->
-      
+
       <!-- ARTIST SECTION -->
-      
-      <div id='artist'>
+
+      <!-- <div id='artist'>
         <h2> Childish Gambino</h2>
-        <p>Glover's rapper alias came from a <a href="http://www.mess.be/inickgenwuname.php" target="_blank">Wu Tang Name Generator </a>. He has now released four studio albums which include: Camp (2011), Because of the Internet (2013), Kauai (2014), and Awaken My Love (2016). Becasue of the Internet was nominated for a for Best Rap Album of the Year in 2014 and Best Rap Performance for his first single <a href= "https://www.youtube.com/watch?v=tG35R8F2j8k" target="_blank">"3005".</a> </p>
+        <p>Glover's rapper alias came from a <a href="http://www.mess.be/inickgenwuname.php" target="_blank">Wu Tang
+            Name Generator </a>. He has now released four studio albums which include: Camp (2011), Because of the
+          Internet (2013), Kauai (2014), and Awaken My Love (2016). Becasue of the Internet was nominated for a for Best
+          Rap Album of the Year in 2014 and Best Rap Performance for his first single <a
+            href="https://www.youtube.com/watch?v=tG35R8F2j8k" target="_blank">"3005".</a> </p>
         <br>
         <div class="row justify-content-md-center">
-          <div class="col-md-4 col-sm-4 text-center"> <img src= "img/camp.jpg" class="section-images album" data-num='1'> </div>
-          <div class="col-md-4 col-sm-4 text-center"> <img src="img/kauai-album.png" class="section-images album" data-num='2'></div>
-          <div class="col-md-4 col-sm-4 text-center"> <img src="img/awaken-album.jpg" class="section-images album" data-num='3'></div>
+          <div class="col-md-4 col-sm-4 text-center"> <img src="img/camp.jpg" class="section-images album" data-num='1'>
+          </div>
+          <div class="col-md-4 col-sm-4 text-center"> <img src="img/kauai-album.png" class="section-images album"
+              data-num='2'></div>
+          <div class="col-md-4 col-sm-4 text-center"> <img src="img/awaken-album.jpg" class="section-images album"
+              data-num='3'></div>
         </div>
         <br>
-      </div>
+      </div> -->
 
       <!-- END OF ARTIST SECTION -->
-      
-      <p> This is artwork from albums Camp (2011), Kauai (2014), and Awaken, My Love! (2016)</p>
+
+      <!-- <p> This is artwork from albums Camp (2011), Kauai (2014), and Awaken, My Love! (2016)</p>
 
       <hr>
 
       <div id="fun-facts">
-        <h2> Fun Facts</h2> 
+        <h2> Fun Facts</h2>
 
         <div class="row justify-content-md-center">
-          <div class="col-sm-6  col-md-6  col-lg-4 text-center" style="margin-bottom: 15px"> 
+          <div class="col-sm-6  col-md-6  col-lg-4 text-center" style="margin-bottom: 15px">
             <h4 class="header-ff">#DonaldForSpiderMan</h4>
-            <p>This was all started from a fan, who stated he should play SpiderMan and little did he know that a trend had emerged. He later talked about this funny theory in his Comedy Central special <a href="https://www.youtube.com/watch?v=ULdm2NLrN4E" target="_blank">Weirdo</a> (2011).</p>
+            <p>This was all started from a fan, who stated he should play SpiderMan and little did he know that a trend
+              had emerged. He later talked about this funny theory in his Comedy Central special <a
+                href="https://www.youtube.com/watch?v=ULdm2NLrN4E" target="_blank">Weirdo</a> (2011).</p>
             <div class=""><img class="section-images" src="img/spiderman.jpg"></div>
           </div>
 
-           <div class=" col-sm-6 col-md-6  col-lg-4 text-center" style="margin-bottom: 15px">
+          <div class=" col-sm-6 col-md-6  col-lg-4 text-center" style="margin-bottom: 15px">
             <h4 class="header-ff"> Star Wars has a new Star</h4>
-            <p>Glover played Lando Calrissian be in the Star Wars: Solo movie which aired in 2018. Glover was the perfect actor because he has the look down, began as a comedic actor, a creative, and a nerd at heart. </p>
-            <div class=""><img class="section-images" src= "img/lando.jpeg"></div>
+            <p>Glover played Lando Calrissian be in the Star Wars: Solo movie which aired in 2018. Glover was the
+              perfect actor because he has the look down, began as a comedic actor, a creative, and a nerd at heart.
+            </p>
+            <div class=""><img class="section-images" src="img/lando.jpeg"></div>
           </div>
 
           <div class="col-sm-6 col-md-6 col-lg-4 text-center" style="margin-bottom: 15px">
             <h4 class="header-ff"> "Migos are The Beatles of Our Generation"</h4>
-            <p>Glover stated in his Golden Globe award acceptance speech for his tv series <i>Atlanta</i> that the rap group Migos are The Beatles of our generation with their No. 1 chart song, <a href="https://www.youtube.com/watch?v=S-sJp1FfG7Q" target="_blank">"Bad & Boujee"</a>. </p>
-            <div class=""><img class="section-images" src= "img/migos.jpg"></div>
+            <p>Glover stated in his Golden Globe award acceptance speech for his tv series <i>Atlanta</i> that the rap
+              group Migos are The Beatles of our generation with their No. 1 chart song, <a
+                href="https://www.youtube.com/watch?v=S-sJp1FfG7Q" target="_blank">"Bad & Boujee"</a>. </p>
+            <div class=""><img class="section-images" src="img/migos.jpg"></div>
           </div>
 
-         
-        </div>
-      </div>
 
-    <hr>
-      
-        <div id='video' class="col-md-6 embed-responsive embed-responsive-16by9 mx-auto">
-          <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/pMZRRO_Lgpo" allowfullscreen></iframe>
-        </div>
+        </div> -->
+    </div>
 
-        <div class="col-md-12 text-center" id="end-quote"> <h2><a href="https://youtu.be/Jdb-6MQaoEY?t=147" target="_blank">"I am what I am, everything I wanna be.”</a><span style="display: block; margin-top: 2%; ">- Childish Gambino</span></h3></div>
-         <!-- <div class="col-md-7" id="video" style="margin-top: 25px"> <iframe display="flex" width="100%" height="100%" src="https://www.youtube.com/embed/pMZRRO_Lgpo" frameborder="1" allowfullscreen></iframe> </div> -->
+    <!-- <hr> -->
+
+    <!-- <div id='video' class="col-md-6 embed-responsive embed-responsive-16by9 mx-auto">
+      <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/pMZRRO_Lgpo" allowfullscreen></iframe>
+    </div>
+
+    <div class="col-md-12 text-center" id="end-quote">
+      <h2><a href="https://youtu.be/Jdb-6MQaoEY?t=147" target="_blank">"I am what I am, everything I wanna
+          be.”</a><span style="display: block; margin-top: 2%; ">- Childish Gambino</span></h3>
+    </div> -->
+    <!-- <div class="col-md-7" id="video" style="margin-top: 25px"> <iframe display="flex" width="100%" height="100%" src="https://www.youtube.com/embed/pMZRRO_Lgpo" frameborder="1" allowfullscreen></iframe> </div> -->
+  </div>
+  </div>
+  <footer>
+    <div class="footer col-md-12"
+      style="width: 100%; background-color: #343a40; color: white; position: relative; bottom:0;">
+      <div class="row">
+        <div class="col-lg-7 col-md-5 footer-section">
+          <h4 id="title-site">D.Glover</h4>
+          <br />
+          <p>This website is not affliated with Donald Glover and is for purely artistic value.</p>
+          <p>A complete list of resources.</p>
+          <div class="col-md-12">
+            <div class="row align-items-center">
+              <a href="https://www.edwingon.com/" target="_blank"><img
+                  src="https://d1bx69z06fa2ip.cloudfront.net/eg-logo.png" height="40px" alt="EGCO" /></a>
+              <h5 style="margin-bottom: 0px; margin-left: 8px;"><a style='color: white; '
+                  href="https://www.edwingon.com/" target="_blank">EGCO</a> &copy; 2020</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4  col-md-6 col-xs-6 order-sm-1 footer-section my-auto">
+          <h4>Follow Here:</h4>
+          <br />
+          <div class="col-md-12 col-xs-12">
+            <div class="row">
+              <div class="col-sm-2 col-2">
+                <a href="https://twitter.com/donaldglover?lang=en" target="_blank">
+                  <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                    x="0px" y="0px" height="45px" width="45px" viewBox="0 0 400 400"
+                    style="enable-background:new 0 0 400 400;" xml:space="preserve">
+                    <style type="text/css">
+                      .st0 {
+                        fill: #1DA1F2;
+                      }
+
+                      .st1 {
+                        fill: #FFFFFF;
+                      }
+                    </style>
+                    <g id="Dark_Blue">
+                      <path class="st0" d="M350,400H50c-27.6,0-50-22.4-50-50V50C0,22.4,22.4,0,50,0h300c27.6,0,50,22.4,50,50v300
+      C400,377.6,377.6,400,350,400z" />
+                    </g>
+                    <g id="Logo__x2014__FIXED">
+                      <path class="st1" d="M153.6,301.6c94.3,0,145.9-78.2,145.9-145.9c0-2.2,0-4.4-0.1-6.6c10-7.2,18.7-16.3,25.6-26.6
+      c-9.2,4.1-19.1,6.8-29.5,8.1c10.6-6.3,18.7-16.4,22.6-28.4c-9.9,5.9-20.9,10.1-32.6,12.4c-9.4-10-22.7-16.2-37.4-16.2
+      c-28.3,0-51.3,23-51.3,51.3c0,4,0.5,7.9,1.3,11.7c-42.6-2.1-80.4-22.6-105.7-53.6c-4.4,7.6-6.9,16.4-6.9,25.8
+      c0,17.8,9.1,33.5,22.8,42.7c-8.4-0.3-16.3-2.6-23.2-6.4c0,0.2,0,0.4,0,0.7c0,24.8,17.7,45.6,41.1,50.3c-4.3,1.2-8.8,1.8-13.5,1.8
+      c-3.3,0-6.5-0.3-9.6-0.9c6.5,20.4,25.5,35.2,47.9,35.6c-17.6,13.8-39.7,22-63.7,22c-4.1,0-8.2-0.2-12.2-0.7
+      C97.7,293.1,124.7,301.6,153.6,301.6" />
+                    </g>
+                  </svg>
+                </a>
+
+              </div>
+              <div class="col-sm-2 col-2">
+                <div style="height:45px; width:49px; padding: 3px 0px; background-color: #f00175; border-radius: 10px;">
+                  <a href="https://www.instagram.com/childishgambino/?hl=en" target="_blank"><img height="38px"
+                      width="38px" style="display: block; margin: auto;" src="/img/glyph-logo_May2016.png" /></a>
+                </div>
+
+              </div>
+              <div class="col-sm-2 col-2">
+                <a href="https://open.spotify.com/artist/73sIBHcqh3Z3NyqHKZ7FOL" target="_blank">
+                  <img src="/img/Spotify_Icon_RGB_Green.png" height="45px" alt="Spotify logo" />
+                </a>
+              </div>
+              <div class="col-sm-2 col-2">
+                <a href="https://itunes.apple.com/us/artist/childish-gambino/466842536" target="_blank">
+                  <?xml version="1.0" encoding="utf-8"?>
+                  <!-- Generator: Adobe Illustrator 16.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+                  <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="45px" height="45px"
+                    viewBox="0 0 28.188 28.195" enable-background="new 0 0 28.188 28.195" xml:space="preserve">
+                    <path fill="#FFFFFF" d="M28.187,7.195c-0.001-0.867-0.076-1.728-0.282-2.574c-0.372-1.536-1.247-2.713-2.561-3.573
+    C24.67,0.607,23.93,0.335,23.14,0.193c-0.608-0.109-1.221-0.159-1.838-0.177c-0.048-0.002-0.098-0.009-0.146-0.014H7.032
+    c-0.178,0.01-0.356,0.02-0.534,0.03c-0.878,0.05-1.75,0.146-2.575,0.472C2.351,1.126,1.219,2.21,0.555,3.768
+    C0.33,4.296,0.212,4.856,0.129,5.423C0.062,5.883,0.024,6.345,0.011,6.81C0.01,6.846,0.002,6.882-0.001,6.918v14.359
+    c0.01,0.166,0.019,0.332,0.03,0.498c0.059,0.957,0.181,1.908,0.584,2.787c0.764,1.668,2.041,2.764,3.799,3.291
+    c0.495,0.149,1.005,0.22,1.519,0.268c0.651,0.062,1.304,0.072,1.957,0.072c4.319,0,8.638,0,12.957-0.002
+    c0.617,0,1.231-0.039,1.844-0.116c0.967-0.124,1.876-0.412,2.697-0.952c0.988-0.65,1.729-1.512,2.208-2.594
+    c0.219-0.495,0.344-1.021,0.434-1.555c0.134-0.793,0.163-1.595,0.162-2.397C28.188,16.116,28.191,11.656,28.187,7.195
+     M20.642,11.882c0,2.237,0.001,4.474-0.001,6.71c0,0.49-0.067,0.971-0.285,1.417c-0.339,0.694-0.894,1.13-1.63,1.339
+    c-0.41,0.117-0.829,0.184-1.256,0.203c-1.118,0.053-2.084-0.705-2.284-1.804c-0.166-0.907,0.268-1.907,1.221-2.374
+    c0.38-0.188,0.786-0.293,1.196-0.381c0.444-0.096,0.89-0.18,1.332-0.282c0.322-0.074,0.537-0.271,0.6-0.606
+    c0.015-0.074,0.021-0.151,0.021-0.227c0.001-2.132,0.001-4.263-0.001-6.394c0-0.073-0.012-0.147-0.03-0.217
+    c-0.046-0.177-0.175-0.285-0.357-0.275c-0.188,0.011-0.373,0.041-0.558,0.078c-0.893,0.176-1.785,0.357-2.677,0.537
+    c-0.911,0.183-1.822,0.368-2.734,0.552c-0.538,0.109-1.076,0.217-1.614,0.326c-0.019,0.004-0.038,0.01-0.056,0.015
+    c-0.325,0.09-0.443,0.239-0.458,0.575c-0.002,0.051-0.001,0.102-0.001,0.154c-0.001,3.056,0,6.113-0.002,9.168
+    c0,0.494-0.055,0.982-0.253,1.441c-0.327,0.754-0.905,1.223-1.685,1.45c-0.412,0.119-0.835,0.187-1.263,0.202
+    c-1.126,0.042-2.061-0.706-2.254-1.814c-0.167-0.955,0.27-1.98,1.354-2.439c0.419-0.176,0.859-0.273,1.301-0.365
+    c0.337-0.071,0.675-0.135,1.011-0.207c0.449-0.098,0.684-0.38,0.703-0.839c0.002-0.06,0.001-0.117,0.001-0.177
+    c0-3.477,0-6.955,0.002-10.432c0-0.145,0.015-0.294,0.049-0.435c0.082-0.335,0.321-0.526,0.641-0.609
+    c0.3-0.078,0.605-0.132,0.909-0.194c0.861-0.174,1.722-0.347,2.583-0.52c0.89-0.18,1.779-0.359,2.669-0.539
+    c0.786-0.159,1.572-0.32,2.36-0.475c0.258-0.051,0.52-0.103,0.78-0.124c0.364-0.029,0.614,0.2,0.651,0.566
+    c0.009,0.087,0.014,0.175,0.014,0.263C20.643,7.394,20.643,9.638,20.642,11.882L20.642,11.882z" />
+                  </svg>
+                </a>
+
+              </div>
+              <div class="col-sm-2 col-2">
+                <div style="height:45px; width:59px;">
+                  <a href="https://www.youtube.com/channel/UC20LoHy2mX0LQODrkUalxVQ" target="_blank"><img height="45px"
+                      width="60px" style="display: block; margin: auto;" src="/img/youtube_social_icon_red.png" /></a>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
       </div>
     </div>
-     <footer>
-        <div class="footer col-md-12" style="width: 100%; background-color: rgb(0,0,0,0.7); height: 100px; text-align: center; color: white; line-height: 100px; position: relative; bottom:0;">
-          <h5 style="height: 100px; line-height: 100px; margin-bottom: 0px;"><a style='color: white; 'href="https://github.com/edwingon1121" target="_blank">Edwin Gonzalez &copy; 2019</a> </h5>
-        </div>
-      </footer>
-    <script type="text/javascript" src="js/albums.js"></script>
-    
-    </body>
-</html>
-  
-  
+  </footer>
+  <script type="text/javascript" src="js/albums.js"></script>
+
 </body>
+
+</html>
+
+
+</body>
+
 </html>

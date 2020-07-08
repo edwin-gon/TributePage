@@ -6,25 +6,31 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>D.Glover</title>
   <link rel='stylesheet prefetch' href='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css'>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  <link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Anton'>
+  <link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Anton'>
+  <link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Raleway'>
   <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
   <div class="container-fluid">
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
       <a class="navbar-brand" href="/index.html">
-        <h1>D. Glover</h1>
+        <h1 id="title-site">D. Glover</h1>
       </a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
-        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse d-flex  flex-row justify-content-end" id="navbarNavAltMarkup">
-        <div class="navbar-nav">
-          <a class="nav-item nav-link" href="#">Biography</a>
-          <a class="nav-item nav-link active" href="#">Television <span class="sr-only">(current)</span></a>
-          <a class="nav-item nav-link" href="/songs.html">Music</a>
-        </div>
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav justify-content-end">
+          <li class="nav-item"><a class="nav-link" href="#">Biography</a></li>
+          <li class="nav-item"><a class="nav-link active disabled" href="/tv.html">Entertainment <span
+                class="sr-only">(current)</span></a></li>
+          <li class="nav-item"><a class="nav-link" href="/songs.html">Music</a></li>
+        </ul>
       </div>
     </nav>
 
